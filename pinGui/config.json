@@ -1,0 +1,32 @@
+{
+  "Application": {
+    "name": "Alarmsystem_gui",
+    "is_dev": true
+  },
+  "Logging": {
+    "path": "logs",
+    "level": "DEBUG",
+    "format": "{asctime} {name} -> {funcName}({lineno}) {levelname:8s} {message}",
+    "backup_count": 10,
+    "max_bytes": 1000000
+  },
+  "Redis": {
+    "host": "",
+    "port": 6379,
+    "db": 0
+  },
+  "API": {
+    "api_url": "https://api.instasolution.ch/api/v2/",
+    "api_key": "",
+    "api_email": "",
+    "api_password": "",
+    "api_dev_type": "",
+    "alarm_event_id": ,
+    "sos_event_id": 
+  },
+  "Passwords": {
+    "on_off": "$2b$12$kH1GIZZld3DriIG42EGIGOg6pisaqS9T.90YjkD2CdVUkLtE.U73y",
+    "silent": "$2b$12$gjZw8q0yz.f5vvKItPLmv.3cdwFhuxmNfB.HkHXf8Tr9BY2G1mKMe",
+    "resize": "$2b$12$GQ.vueVx/2xyvQmSuSuG1ud9ylJcrfULWk/eYnXikTjQzLQagaux2"
+  }
+}

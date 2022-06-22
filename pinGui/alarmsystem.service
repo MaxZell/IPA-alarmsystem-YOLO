@@ -1,0 +1,13 @@
+[Unit]
+Description=Alarmsystem for soXes Bubikon office
+After=network.target network-online.target redis.service multi-user.target graphical.target
+Wants=graphical.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/var/soxes/alarmsystem/
+ExecStart=sudo /bin/bash -c "export DISPLAY=:0; export XAUTHORITY=/home/pi/.Xauthority; /var/soxes/launch.command"
+
+[Install]
+WantedBy=multi-user.target

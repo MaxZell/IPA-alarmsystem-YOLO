@@ -1,0 +1,23 @@
+{
+  "Application": {
+    "name": "Alarmsystem_camera"
+  },
+  "Logging": {
+    "path": "logs",
+    "level": "DEBUG",
+    "format": "{asctime} {name} {levelname:8s} {message}",
+    "backup_count": 10,
+    "max_bytes": 1000000
+  },
+  "Redis": {
+    "host": "",
+    "port": 6379,
+    "db": 0
+  },
+  "Alarm": {
+    "timeout": 10
+  },
+  "Device": {
+    "name": "front"
+  }
+}

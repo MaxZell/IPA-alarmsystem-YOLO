@@ -1,0 +1,15 @@
+[Unit]
+Description=Raspberry writes to Redis when it detects a person
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+Restart=always
+RestartSec=5
+WorkingDirectory=/var/soxes/alarmsystem
+ExecStart=sudo /usr/bin/python3 /var/soxes/alarmsystem/main.py
+
+[Install]
+WantedBy=multi-user.target
+
